@@ -1,0 +1,147 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+}
+
+/* Calculator container */
+.calculator {
+  background-color: #ecf0f3;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+  width: 320px;
+}
+
+/* Display */
+#display {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 12px;
+  background-color: #dfe6e9;
+  text-align: right;
+  font-size: 2rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: inset 2px 2px 5px #b2bec3, inset -2px -2px 5px #ffffff;
+}
+
+/* Buttons container */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Button styling */
+button {
+  height: 60px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #2d3436;
+  box-shadow: 3px 3px 6px #b2bec3, -3px -3px 6px #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #dfe6e9;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 5px #b2bec3, inset -2px -2px 5px #ffffff;
+}
+
+/* Special buttons */
+button:nth-child(1) { /* Clear button (C) */
+  background-color: #ff7675;
+  color: white;
+}
+button:nth-child(1):hover {
+  background-color: #d63031;
+}
+button:nth-child(15) { /* Equals (=) */
+  background-color: #00b894;
+  color: white;
+}
+button:nth-child(15):hover {
+  background-color: #019875;
+}
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+.footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Unique button styles */
+.btn-multiply {
+  background-color: #fdcb6e;
+  color: #2d3436;
+}
+.btn-multiply:hover {
+  background-color: #e1b12c;
+}
+
+.btn-divide {
+  background-color: #a29bfe;
+  color: #2d3436;
+}
+.btn-divide:hover {
+  background-color: #6c5ce7;
+  color: white;
+}
+
+.btn-add {
+  background-color: #fab1a0;
+  color: #2d3436;
+}
+.btn-add:hover {
+  background-color: #e17055;
+  color: white;
+}
+
+.btn-subtract {
+  background-color: #81ecec;
+  color: #2d3436;
+}
+.btn-subtract:hover {
+  background-color: #00cec9;
+  color: white;
+}
+
+
+
+.btn-equal {
+  background-color: #55efc4;
+  color: #2d3436;
+}
+.btn-equal:hover {
+  background-color: #00b894;
+  color: white;
+}
+
